@@ -14,7 +14,7 @@ import {
 } from "../../component";
 import { Gap, CustomInput } from "../../component/atom";
 import "./hotel.css";
-import { labelmapLogo } from "../../assets";
+import { ikonsawit } from "../../assets";
 import {
   FindHotel,
   FilterHotel,
@@ -453,7 +453,7 @@ const Hotel = (props) => {
         <div className="left-category">
           <div className="d-flex justify-content-between">
             <Link to="/">
-              <img src={labelmapLogo} alt="Label Maps" style={{ width: '70px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
+              <img src={ikonsawit} alt="Traceability ISPO" style={{ width: '48px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
             </Link>
             {/* <div onClick={handleShow} className="btnAddPlace">
               <i className="fas fa-plus icon-plus" />

@@ -6,7 +6,7 @@ import { useMedia } from "use-media";
 import Swal from 'sweetalert2';
 import { TextFields } from "../../component/molecule/TextField";
 import {  signup, loginWithGoogle, emailVerification } from "../../config/services";
-import { labelmapLogo, google } from "../../assets";
+import { ikonsawit, google } from "../../assets";
 import "./register.css";
 
 
@@ -57,9 +57,9 @@ const Register = () => {
       <div className="bg-map-signup">
         <div className="d-flex justify-content-around">
           <Link to="/">
-            <img alt="logo label maps"
+            <img alt="logo Traceability ISPO"
               className="logo-label-maps-signup"
-              src={labelmapLogo}
+              src={ikonsawit}
             />
           </Link>
           <div className="row">
@@ -92,7 +92,7 @@ const Register = () => {
             >
               {formik => (
                 <div style={{marginTop: -10}}>
-                  <p className="title-signup-page" >Sign Up to Label Maps</p>
+                  <p className="title-signup-page" >Sign Up to Traceability ISPO</p>
                   <div className="d-flex justify-content-center">
                     <div onClick={handleLoginWithGoogle} disabled={loading} className="row signupGoogle d-flex justify-content-center">
                       <img className="logo-google-signup" src={google}/>

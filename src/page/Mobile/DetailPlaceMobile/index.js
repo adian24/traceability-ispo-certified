@@ -30,7 +30,7 @@ import {
   mapsGif,
   quote,
   person,
-  labelmapLogo,
+  ikonsawit,
   cf1,
   cf2,
   cf3,

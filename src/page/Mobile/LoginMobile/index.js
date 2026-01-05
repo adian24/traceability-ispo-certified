@@ -6,7 +6,7 @@ import { useMedia } from "use-media";
 import Swal from 'sweetalert2';
 import { TextFields } from "../../../component/molecule/TextField";
 import { Modal } from "react-bootstrap";
-import { labelmapLogo, google } from "../../../assets";
+import { ikonsawit, google } from "../../../assets";
 import { auth, loginWithGoogle, login, resetPassword } from "../../../config/services";
 import "./loginMobile.css"
 
@@ -79,9 +79,9 @@ return (
         </Link>
       </div>
       <Link to="/" className="d-flex justify-content-center">
-        <img alt="logo label maps"
+        <img alt="logo Traceability ISPO"
           className="logo-label-maps-signup-mobile"
-          src={labelmapLogo}
+          src={ikonsawit}
         />
       </Link>
       <div className="d-flex justify-content-center">
@@ -111,7 +111,7 @@ return (
         >
           {formik => (
             <div >
-              <p className="title-signup-page-mobile" >Sign In to Label Maps</p>
+              <p className="title-signup-page-mobile" >Sign In to Traceability ISPO</p>
               <div className="d-flex justify-content-center">
                 <div onClick={handleLoginWithGoogle} disabled={loading} className="row signupGoogle-mobile d-flex justify-content-center">
                   <img className="logo-google-mobile" src={google}/>

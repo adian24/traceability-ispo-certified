@@ -34,7 +34,7 @@ import {
   // markerCompany, 
   googleMapURL, 
   URIChart} from "../../../utils";
-import { food, hotel, office, pom, labelmapLogo } from "../../../assets";
+import { food, hotel, office, pom, ikonsawit } from "../../../assets";
 import InfiniteScroll from 'react-infinite-scroller'
 import Axios from "axios";
 
@@ -479,10 +479,10 @@ const ListCompanyMobile = (props) => {
               <img
                 alt="label map logo"
                 className="mr-1 mb-2"
-                src={labelmapLogo}
+                src={ikonsawit}
                 width={65}
                 /> 
-                <span class="title-labelmaps" style={{ fontWeight: "800", marginLeft: "-4px" }} >Label Maps</span>
+                <span class="title-labelmaps" style={{ fontWeight: "800", marginLeft: "-4px" }} >Traceability ISPO</span>
             </Link>
           </div>
           <div className="col-4">

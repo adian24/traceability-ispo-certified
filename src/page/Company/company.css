@@ -36,7 +36,7 @@
     cursor: pointer !important;
     width: 120px !important;
     height: 42px !important;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #00950b 0%, #183e00 100%) !important;
     border: none !important;
     justify-content: center !important;
     line-height: 42px !important;
@@ -455,10 +455,10 @@
 
 .search-box {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 10%;
   transform: translate(-0%, -50%);
-  background: #2d2066;
+  background: #02611f;
   height: 40px;
   border-radius: 10px;
   padding: 10px;

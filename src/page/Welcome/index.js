@@ -7,7 +7,7 @@ import {
   mapsGif,
   quote,
   person,
-  labelmapLogo,
+  ikonsawit,
   cf1,
   cf2,
   cf3,
@@ -21,7 +21,8 @@ import {
   iso_9001,
   CHSE,
   halal,
-  MapsLogin
+  MapsLogin,
+  kebunsawit
 } from "../../assets";
 import Hello from './hello';
 import { Gap } from "../../component/atom";
@@ -274,33 +275,33 @@ useEffect(() => {
     // Check if light mode is active
     const isLightMode = document.body.classList.contains('light-mode');
 
-    // Define colors based on theme
+    // Define colors based on theme - Oil Palm Theme
     const colors = isLightMode ? {
-      lineStart: 'rgba(59, 130, 246, 0.4)',
-      lineMiddle: 'rgba(6, 182, 212, 0.6)',
-      lineEnd: 'rgba(59, 130, 246, 0.4)',
-      particle: 'rgba(6, 182, 212, 0.9)',
-      glowCenter: 'rgba(6, 182, 212, 0.8)',
-      glowMiddle: 'rgba(59, 130, 246, 0.4)',
-      glowEnd: 'rgba(59, 130, 246, 0)',
-      ring: 'rgba(6, 182, 212, 0.6)',
+      lineStart: 'rgba(45, 90, 39, 0.4)',
+      lineMiddle: 'rgba(74, 222, 128, 0.6)',
+      lineEnd: 'rgba(45, 90, 39, 0.4)',
+      particle: 'rgba(74, 222, 128, 0.9)',
+      glowCenter: 'rgba(74, 222, 128, 0.8)',
+      glowMiddle: 'rgba(45, 90, 39, 0.4)',
+      glowEnd: 'rgba(45, 90, 39, 0)',
+      ring: 'rgba(255, 107, 53, 0.6)',  // Orange for fruit
       pointCenter: 'rgba(255, 255, 255, 1)',
-      pointMiddle: 'rgba(6, 182, 212, 1)',
-      pointEnd: 'rgba(59, 130, 246, 0.9)',
-      text: 'rgba(6, 182, 212, 0.7)'
+      pointMiddle: 'rgba(255, 107, 53, 1)',  // Orange center
+      pointEnd: 'rgba(45, 90, 39, 0.9)',
+      text: 'rgba(45, 90, 39, 0.7)'
     } : {
-      lineStart: 'rgba(59, 130, 246, 0.4)',
-      lineMiddle: 'rgba(6, 182, 212, 0.6)',
-      lineEnd: 'rgba(59, 130, 246, 0.4)',
-      particle: 'rgba(6, 182, 212, 0.9)',
-      glowCenter: 'rgba(6, 182, 212, 0.8)',
-      glowMiddle: 'rgba(59, 130, 246, 0.4)',
-      glowEnd: 'rgba(59, 130, 246, 0)',
-      ring: 'rgba(6, 182, 212, 0.6)',
+      lineStart: 'rgba(90, 156, 82, 0.4)',
+      lineMiddle: 'rgba(163, 230, 53, 0.6)',
+      lineEnd: 'rgba(90, 156, 82, 0.4)',
+      particle: 'rgba(163, 230, 53, 0.9)',
+      glowCenter: 'rgba(163, 230, 53, 0.8)',
+      glowMiddle: 'rgba(90, 156, 82, 0.4)',
+      glowEnd: 'rgba(90, 156, 82, 0)',
+      ring: 'rgba(255, 165, 0, 0.8)',  // Gold for fruit
       pointCenter: 'rgba(255, 255, 255, 1)',
-      pointMiddle: 'rgba(6, 182, 212, 1)',
-      pointEnd: 'rgba(59, 130, 246, 0.9)',
-      text: 'rgba(6, 182, 212, 0.7)'
+      pointMiddle: 'rgba(255, 165, 0, 1)',  // Gold center
+      pointEnd: 'rgba(90, 156, 82, 0.9)',
+      text: 'rgba(124, 184, 106, 0.7)'
     };
 
     // Draw background image (MapsLogin.png)
@@ -374,8 +375,8 @@ useEffect(() => {
 
       // Inner glow ring
       ctx.strokeStyle = isLightMode
-        ? `rgba(30, 58, 138, ${0.4 + pulse * 0.2})`
-        : `rgba(6, 182, 212, ${0.6 + pulse * 0.4})`;
+        ? `rgba(45, 90, 39, ${0.4 + pulse * 0.2})`
+        : `rgba(255, 165, 0, ${0.6 + pulse * 0.4})`;  // Gold/orange pulse
       ctx.lineWidth = 2;
       ctx.beginPath();
       ctx.arc(city.x, city.y, size * 2, 0, Math.PI * 2);
@@ -715,8 +716,8 @@ useEffect(() => {
         <header className="futuristic-header">
           <div className="header-content">
             <div className="logo-section">
-              <img alt="logo label maps" className="logo-labelmaps" src={labelmapLogo} width={85} />
-              <span className="brand-name">Label Maps</span>
+              <img alt="logo Traceability ISPO" className="logo-labelmaps" src={ikonsawit} width={85} />
+              <span className="brand-name">Traceability ISPO</span>
             </div>
             <div className="auth-section">
               {/* Theme Toggle Button */}
@@ -759,6 +760,11 @@ useEffect(() => {
 
         {/* Hero Section */}
         <section className="futuristic-hero snap-section" id="hero">
+          {/* Oil Palm Plantation Background Overlay */}
+          <div className="oil-plantation-overlay">
+            <img src={kebunsawit} alt="Oil Palm Plantation" className="plantation-bg-image" />
+          </div>
+
           {/* Indonesia Map Canvas with MapsLogin.png Background */}
           <div className="map-container fade-in-right">
             <canvas id="mapCanvas" className="map-canvas"></canvas>
@@ -767,16 +773,16 @@ useEffect(() => {
           <div className="hero-content">
             <div className="hero-text-section fade-in-left">
               <h1 className="hero-title">
-                Come On <br />Label your place
-                <span className="title-accent">for Traceability</span>
+                Indonesian <br />Sustainable Palm Oil
+                <span className="title-accent">ISPO Certification</span>
               </h1>
               <p className="hero-subtitle">
-                Indonesia's leading certificate tracking platform. Discover certified businesses across the archipelago with our advanced mapping system.
+                Platform ketelusuran sertifikasi perkebunan kelapa sawit terdepan di Indonesia. Temukan perkebunan bersertifikat ISPO di seluruh nusantara dengan sistem pemetaan canggih kami.
               </p>
               <div className="hero-cta-group">
                 <Link to="/company" className="hero-cta-btn hero-cta-btn-primary stagger-1" style={{textDecoration:'none'}}>
                   <img className="cta-icon" src={mapsGif} alt="maps icon" />
-                  Get Started
+                  Lihat Peta Perkebunan
                 </Link>
                 {/* <a href="#!" className="hero-cta-btn hero-cta-btn-secondary stagger-2">
                   View Demo
@@ -789,12 +795,12 @@ useEffect(() => {
         {/* Map Chart Section */}
         <section className="chart-section snap-section" id="chart">
           <div className="section-header fade-in-up">
-            <div className="section-badge stagger-1">📊 Data Visualization</div>
+            <div className="section-badge stagger-1">📊 Visualisasi Data ISPO</div>
             <h2 className="section-title stagger-2">
-              Indonesia <span className="highlight">Sustainable Certificate Index</span>
+              Statistik <span className="highlight">Perkebunan Kelapa Sawit</span>
             </h2>
             <p className="section-description stagger-3">
-              Explore comprehensive data about certified companies across all provinces in Indonesia
+              Jelajahi data komprehensif tentang perkebunan bersertifikat ISPO di seluruh provinsi di Indonesia
             </p>
           </div>
 
@@ -806,40 +812,40 @@ useEffect(() => {
         {/* Values Section */}
         <section className="values-section snap-section" id="values">
           <div className="section-header fade-in-up">
-            <div className="section-badge stagger-1">💡 Why Choose Us</div>
-            <h2 className="section-title stagger-2">4 Priority <span className="highlight">Values</span></h2>
+            <div className="section-badge stagger-1">🌴 Nilai ISPO</div>
+            <h2 className="section-title stagger-2">Prinsip <span className="highlight">Keberlanjutan</span></h2>
             <p className="section-description stagger-3">
-              Building trust through transparency and excellence in certification mapping
+              Membangun kepercayaan melalui transparansi dan keunggulan dalam pemetaan sertifikasi kelapa sawit
             </p>
           </div>
           <div className="values-grid">
             <div className="value-card scale-in stagger-1">
               <div className="value-number">01</div>
               <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🏷️</div>
-              <h3 className="value-title">Labelling Your Place</h3>
-              <p className="value-description">Mark your location with certified standards and recognized credentials</p>
+              <div className="value-icon-wrapper">🌱</div>
+              <h3 className="value-title">Perkebunan Legal</h3>
+              <p className="value-description">Memastikan perkebunan memiliki izin yang sesuai dengan peraturan perundang-undangan</p>
             </div>
             <div className="value-card scale-in stagger-2">
               <div className="value-number">02</div>
               <div className="shimmer"></div>
-              <div className="value-icon-wrapper">✓</div>
-              <h3 className="value-title">Provide Certainty</h3>
-              <p className="value-description">Give confidence to end consumers with verified information</p>
+              <div className="value-icon-wrapper">🌿</div>
+              <h3 className="value-title">Manajemen Berkelanjutan</h3>
+              <p className="value-description">Menerapkan praktik pengelolaan yang ramah lingkungan dan berkelanjutan</p>
             </div>
             <div className="value-card scale-in stagger-3">
               <div className="value-number">03</div>
               <div className="shimmer"></div>
-              <div className="value-icon-wrapper">💎</div>
-              <h3 className="value-title">Clear & Informative</h3>
-              <p className="value-description">Present data in an attractive and easily understandable manner</p>
+              <div className="value-icon-wrapper">🤝</div>
+              <h3 className="value-title">Kesejahteraan Petani</h3>
+              <p className="value-description">Meningkatkan kesejahteraan dan kompetensi petani kelapa sawit</p>
             </div>
             <div className="value-card scale-in stagger-4">
               <div className="value-number">04</div>
               <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🗺️</div>
-              <h3 className="value-title">Spatial Communication</h3>
-              <p className="value-description">Effectively communicate location information and coverage</p>
+              <div className="value-icon-wrapper">🌍</div>
+              <h3 className="value-title">Jejak Keberlanjutan</h3>
+              <p className="value-description">Memantau dan melacak rantai pasok minyak sawit yang berkelanjutan</p>
             </div>
           </div>
         </section>
@@ -847,10 +853,10 @@ useEffect(() => {
         {/* Customer Feedback Section */}
         <section className="feedback-section snap-section" id="feedback">
           <div className="section-header fade-in-up">
-            <div className="section-badge stagger-1">⭐ Testimonials</div>
-            <h2 className="section-title stagger-2">Customer <span className="highlight">Feedback</span></h2>
+            <div className="section-badge stagger-1">⭐ Testimoni</div>
+            <h2 className="section-title stagger-2">Apa Kata <span className="highlight">Mereka</span></h2>
             <p className="section-description stagger-3">
-              Hear what our users say about their experience with Label Maps platform
+              Pendapat pengguna tentang pengalaman mereka dengan platform pemetaan ISPO
             </p>
           </div>
           <div className="feedback-carousel fade-in-up stagger-4">
@@ -885,49 +891,49 @@ useEffect(() => {
         {/* Workflow Section */}
         <section className="workflow-section snap-section" id="workflow">
           <div className="section-header fade-in-up">
-            <div className="section-badge stagger-1">📋 Process</div>
-            <h2 className="section-title stagger-2">Our <span className="highlight">Workflow</span></h2>
+            <div className="section-badge stagger-1">📋 Proses</div>
+            <h2 className="section-title stagger-2">Alur <span className="highlight">Sertifikasi ISPO</span></h2>
             <p className="section-description stagger-3">
-              Simple, transparent, and efficient certification process
+              Proses sertifikasi yang sederhana, transparan, dan efisien untuk perkebunan kelapa sawit
             </p>
           </div>
           <p className="workflow-intro fade-in-up stagger-4">
-            Our streamlined process guides you from initial assessment to final certification with clarity and precision at every step.
+            Proses yang terstruktur membimbing Anda dari penilaian awal hingga sertifikasi ISPO dengan kejelasan dan presisi di setiap tahap.
           </p>
           <div className="workflow-cards">
             <div className="workflow-card fade-in-up stagger-1">
-              <div className="step-badge">Step 1</div>
+              <div className="step-badge">Tahap 1</div>
               <div className="shimmer"></div>
               <div className="connection-line"></div>
               <div className="step-number">01</div>
-              <h3 className="workflow-title">Define Control Points</h3>
+              <h3 className="workflow-title">Pengajuan Aplikasi</h3>
               <p className="workflow-description">
-                Use label maps ready-to-use checklists or customize them with our specialists according to your specific needs and requirements.
+                Submit dokumen persyaratan ISPO dan lengkapi data perkebunan melalui sistem kami yang terintegrasi.
               </p>
               <div className="workflow-progress">
                 <div className="workflow-progress-bar"></div>
               </div>
             </div>
             <div className="workflow-card featured fade-in-up stagger-2">
-              <div className="step-badge">Step 2</div>
+              <div className="step-badge">Tahap 2</div>
               <div className="shimmer"></div>
               <div className="connection-line"></div>
               <div className="step-number">02</div>
-              <h3 className="workflow-title">Conduct the Audit</h3>
+              <h3 className="workflow-title">Audit Lapangan</h3>
               <p className="workflow-description">
-                Global coverage with possibility to conduct both remote audits and/or field audits, thanks to our best-in-class digital solutions.
+                Tim auditor akan memverifikasi kepatuhan terhadap standar ISPO langsung di lokasi perkebunan.
               </p>
               <div className="workflow-progress">
                 <div className="workflow-progress-bar"></div>
               </div>
             </div>
             <div className="workflow-card fade-in-up stagger-3">
-              <div className="step-badge">Step 3</div>
+              <div className="step-badge">Tahap 3</div>
               <div className="shimmer"></div>
               <div className="step-number">03</div>
-              <h3 className="workflow-title">Grant the Label</h3>
+              <h3 className="workflow-title">Sertifikasi ISPO</h3>
               <p className="workflow-description">
-                Possibility to use Label maps standard label or to design your own label with dedicated branding and custom styling.
+                Penerbitan sertifikat ISPO setelah lulus audit dan terdaftar secara resmi dalam sistem nasional.
               </p>
               <div className="workflow-progress">
                 <div className="workflow-progress-bar"></div>
@@ -939,10 +945,10 @@ useEffect(() => {
         {/* Contact Section */}
         <section className="contact-section snap-section" id="contact">
           <div className="section-header fade-in-up">
-            <div className="section-badge stagger-1">✉️ Get In Touch</div>
-            <h2 className="section-title stagger-2">Send Us <span className="highlight">Message</span></h2>
+            <div className="section-badge stagger-1">✉️ Hubungi Kami</div>
+            <h2 className="section-title stagger-2">Kirim <span className="highlight">Pesan</span></h2>
             <p className="section-description stagger-3">
-              Have questions or need assistance? We're here to help you
+              Punya pertanyaan tentang sertifikasi ISPO? Kami siap membantu Anda
             </p>
           </div>
           <div className="contact-container">
@@ -952,32 +958,32 @@ useEffect(() => {
             <div className="contact-form-card fade-in-right stagger-2">
               <div className="form-row">
                 <div className="form-group">
-                  <input type="email" className="futuristic-input" placeholder="Your Email" />
+                  <input type="email" className="futuristic-input" placeholder="Email Anda" />
                 </div>
                 <div className="form-group">
-                  <input type="text" className="futuristic-input" placeholder="Your Name" />
+                  <input type="text" className="futuristic-input" placeholder="Nama Lengkap" />
                 </div>
               </div>
               <div className="form-row">
                 <div className="form-group">
-                  <input type="text" className="futuristic-input" placeholder="Phone Number" />
+                  <input type="text" className="futuristic-input" placeholder="Nomor Telepon" />
                 </div>
                 <div className="form-group">
-                  <input type="text" className="futuristic-input" placeholder="Subject" />
+                  <input type="text" className="futuristic-input" placeholder="Subjek" />
                 </div>
               </div>
               <div className="form-group">
-                <label className="input-label">Your Message</label>
-                <textarea className="futuristic-textarea" rows="4" placeholder="Type your message here..."></textarea>
+                <label className="input-label">Pesan Anda</label>
+                <textarea className="futuristic-textarea" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
               </div>
               <div className="form-checkbox">
                 <input type="checkbox" id="privacyCheck" className="checkbox-input" />
                 <label htmlFor="privacyCheck" className="checkbox-label">
-                  By sending this message, you confirm that you have read and agreed to our privacy-policy.
+                  Dengan mengirim pesan ini, Anda mengkonfirmasi bahwa telah membaca dan menyetujui kebijakan privasi kami.
                 </label>
               </div>
               <button type="submit" className="submit-btn futuristic-btn">
-                Submit Message
+                Kirim Pesan
                 <i className="fas fa-paper-plane ml-2"></i>
               </button>
             </div>
@@ -986,9 +992,9 @@ useEffect(() => {
         <footer className="futuristic-footer" id="footer">
           <div className="footer-content">
             <div className="footer-section footer-brand fade-in-up stagger-1">
-              <h3 className="footer-title">Label Maps</h3>
+              <h3 className="footer-title">Traceability ISPO</h3>
               <p className="footer-description">
-                Whatever your business activity, restart operations as quickly as possible with appropriate Health, Safety and Hygiene conditions. We're here to help you succeed.
+                Platform pemetaan sertifikasi ISPO terdepan untuk ketelusuran perkebunan kelapa sawit berkelanjutan di Indonesia. Kami membantu Anda memastikan kepatuhan dan keberlanjutan.
               </p>
               <div className="social-links">
                 <Link to="#!" className="social-link" aria-label="Facebook">
@@ -1006,25 +1012,25 @@ useEffect(() => {
               </div>
             </div>
             <div className="footer-section fade-in-up stagger-2">
-              <h4 className="footer-heading">Quick Links</h4>
+              <h4 className="footer-heading">Tautan Cepat</h4>
               <ul className="footer-links">
-                <li><Link to="/company">Map View</Link></li>
-                <li><Link to="/#!">About Us</Link></li>
-                <li><Link to="/#!">Services</Link></li>
-                <li><Link to="/#!">Certifications</Link></li>
+                <li><Link to="/company">Peta Perkebunan</Link></li>
+                <li><Link to="/#!">Tentang Kami</Link></li>
+                <li><Link to="/#!">Layanan</Link></li>
+                <li><Link to="/#!">Sertifikasi</Link></li>
               </ul>
             </div>
             <div className="footer-section fade-in-up stagger-3">
               <h4 className="footer-heading">Legal</h4>
               <ul className="footer-links">
-                <li><Link to="/#!">Terms & Condition</Link></li>
-                <li><Link to="/#!">Privacy Policy</Link></li>
-                <li><Link to="/#!">Imprint</Link></li>
-                <li><Link to="/#!">Legal Notice</Link></li>
+                <li><Link to="/#!">Syarat & Ketentuan</Link></li>
+                <li><Link to="/#!">Kebijakan Privasi</Link></li>
+                <li><Link to="/#!">Tentang</Link></li>
+                <li><Link to="/#!">Perhatian Hukum</Link></li>
               </ul>
             </div>
             <div className="footer-section fade-in-up stagger-4">
-              <h4 className="footer-heading">Contact Us</h4>
+              <h4 className="footer-heading">Hubungi Kami</h4>
               <ul className="footer-contact">
                 <li className="contact-item">
                   <i className="fas fa-map-marker-alt"></i>
@@ -1042,7 +1048,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="footer-bottom fade-in-up">
-            <p>&copy; 2025 Label Maps. All rights reserved. Made with ❤️ in Indonesia</p>
+            <p>&copy; 2025 Traceability ISPO. Semua hak dilindungi. Dibuat dengan ❤️ di Indonesia untuk ISPO</p>
           </div>
         </footer>
         </section>

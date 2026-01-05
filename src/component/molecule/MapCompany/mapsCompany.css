@@ -83,12 +83,12 @@
 
 .leaflet-control-zoom a:hover {
   background-color: #f1f3f4 !important;
-  color: #1967d2 !important;
+  color: #19d251 !important;
 }
 
 .leaflet-control-zoom a:active {
   background-color: #e8f0fe !important;
-  color: #1967d2 !important;
+  color: #19d219 !important;
 }
 
 .bg-popup-company {
@@ -100,7 +100,7 @@
     border-radius: 24px !important;
     min-width: 280px;
     max-width: 280px;
-    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3) !important;
+    box-shadow: 0 10px 40px rgba(102, 234, 120, 0.3) !important;
     border: none !important;
     overflow: hidden !important;
   }
@@ -120,7 +120,7 @@
     font: 700 18px / 28px Tahoma, Verdana, sans-serif;
     color: white !important;
     text-decoration: none;
-    background: rgba(102, 126, 234, 0.9) !important;
+    background: rgba(19, 88, 2, 0.9) !important;
     border-radius: 50% !important;
     transition: all 0.3s ease !important;
     z-index: 1000 !important;
@@ -131,7 +131,7 @@
   }
 
   .leaflet-container a.leaflet-popup-close-button:hover {
-    background: rgba(118, 75, 162, 1) !important;
+    background: rgb(0, 94, 28) !important;
     transform: rotate(90deg) !important;
   }
 
@@ -181,7 +181,7 @@
   }
 
   .category-popup-company {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #008812 0%, #1a551f 100%) !important;
     color: white !important;
     font-size: 11px;
     border-radius: 20px !important;
@@ -259,7 +259,7 @@
 
   .btn-detail-company {
     font-size: 13px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #008812 0%, #1a551f 100%) !important;
     color: white !important;
     border-radius: 12px !important;
     margin: 12px 12px 16px 12px !important;
@@ -276,7 +276,7 @@
 
   .btn-detail-company:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5) !important;
+    box-shadow: 0 6px 16px rgba(7, 104, 20, 0.5) !important;
   }
 
   /* .gm-style .gm-style-iw-t::after {

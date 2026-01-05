@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Navbar.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { food, hotel, office, pom, labelmapLogo } from "../../../assets";
+import { food, hotel, office, pom, ikonsawit } from "../../../assets";
 import { logout } from "../../../config/services";
 import { auth } from "../../../config/services";
 
@@ -47,7 +47,7 @@ const Navbar = () => {
               <img
                 alt="label map logo"
                 className="mr-1 mb-2"
-                src={labelmapLogo}
+                src={ikonsawit}
                 width={65}
               /> 
             </Link>

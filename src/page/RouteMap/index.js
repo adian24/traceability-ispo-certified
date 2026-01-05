@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./routeMap.css";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { labelmapLogo } from "../../assets";
+import { ikonsawit } from "../../assets";
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
@@ -707,7 +707,7 @@ const RouteMap = () => {
                       <img
                         alt="label map logo"
                         className="mr-1 mb-2"
-                        src={labelmapLogo}
+                        src={ikonsawit}
                         width={65}
                       /> 
                     </Link>

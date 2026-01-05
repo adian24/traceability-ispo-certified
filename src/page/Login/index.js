@@ -10,7 +10,7 @@ import { Label } from "../../component/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../component/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../../component/ui/dialog";
 import { Separator } from "../../component/ui/separator";
-import { labelmapLogo, google } from "../../assets";
+import { ikonsawit, google } from "../../assets";
 import { auth, loginWithGoogle, login, resetPassword } from "../../config/services";
 
 const Login = () => {
@@ -125,9 +125,9 @@ const Login = () => {
       <header className="relative z-10 flex items-center justify-between px-12 py-6">
         <Link to="/" className="flex items-center">
           <img
-            alt="Label Maps"
+            alt="Traceability ISPO"
             className="h-10 w-auto transition-transform hover:scale-105"
-            src={labelmapLogo}
+            src={ikonsawit}
           />
         </Link>
         <div className="flex items-center gap-3">

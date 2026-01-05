@@ -35,7 +35,7 @@ import {
   mapsGif,
   quote,
   person,
-  labelmapLogo,
+  ikonsawit,
   cf1,
   cf2,
   cf3,
@@ -520,7 +520,7 @@ const DetailPlace = (props) => {
           <Scrollbars>
             <div className="d-flex justify-content-between">
               <Link to="/">
-                <img src={labelmapLogo} alt="Label Maps" style={{ width: '70px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
+                <img src={ikonsawit} alt="Traceability ISPO" style={{ width: '48px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
               </Link>
               <Link to={ data.catmap_id == '1' ? `/restaurant` : ( data.catmap_id == '2' ? `/hotel` : ( data.catmap_id == '3' ? `/spbu` : `/company`))}>
                 <i className="fas fa-times text-dark" style={{ fontSize: 20, marginTop: '10px', marginRight:'15px' }}></i>

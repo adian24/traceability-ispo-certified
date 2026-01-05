@@ -19,7 +19,7 @@ import pom from "./images/Pom.png";
 import ISO from "./images/iso.svg";
 import PastiPas from "./images/PastiPas.png";
 import PastiPas2 from "./images/pasti-pas.png";
-import labelmapLogo from './images/labelmaps.png';
+import ikonsawit from './images/ikonsawit.png';
 import cf1 from './images/cf1.jpg';
 import cf2 from './images/cf2.jpg';
 import cf3 from './images/cf3.jpg';
@@ -40,10 +40,12 @@ import gedung from "./images/gedung.jpg";
 // import white_logo from "./images/logo-pga.png";
 import logoVertikal from "./images/logoVertikal.png";
 import MapsLogin from "./images/MapsLogin.png";
+import kebunsawit from "./images/kebunsawit.jpg";
 
 export {
   logoVertikal,
   MapsLogin,
+  kebunsawit,
   // white_logo,
   // logo_pga,
   // Logo_full,
@@ -61,7 +63,7 @@ export {
   cf2,
   cf3,
   cf4,
-  labelmapLogo,
+  ikonsawit,
   phone,
   bgfooter,
   quote,

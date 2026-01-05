@@ -13,7 +13,7 @@ import AddIcon from "@mui/icons-material/AddCircle";
 import { CardItem, Navbar, MapCompany, useGeolocation, CategoryBar } from "../../component";
 import { Gap, CustomInput } from "../../component/atom";
 import "./company.css";
-import { labelmapLogo } from "../../assets";
+import { ikonsawit } from "../../assets";
 import {
   FindCompany,
   FilterCompany,
@@ -545,7 +545,7 @@ const Company = (props) => {
         <div className="left-category-company">
           <div className="d-flex justify-content-between">
             <div onClick={landingPage} className="btnHome">
-              <img src={labelmapLogo} alt="Label Maps" style={{ width: '70px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
+              <img src={ikonsawit} alt="Traceability ISPO" style={{ width: '48px', cursor: 'pointer', marginTop: '9px', marginLeft: '6px' }} />
             </div>
             <div onClick={handleShow} className="btnAddPlace">
               <i className="fas fa-plus icon-plus pt-1 !pt-[14px] !mr-[6px]" style={{ fontSize:'12px'}} />

@@ -584,24 +584,24 @@ function CustomHighMap() {
         //     borderWidth: 1
         // },
         tooltip: {
-            backgroundColor: 'rgba(10, 25, 47, 0.6)',
+            backgroundColor: 'rgba(13, 31, 13, 0.8)',
             borderWidth: 1,
-            borderColor: 'rgba(6, 182, 212, 0.3)',
+            borderColor: 'rgba(74, 222, 128, 0.4)',
             borderRadius: 16,
             shadow: true,
             useHTML: true,
             padding: 0,
             style: {
-                color: '#e0f2fe',
+                color: '#f0fdf4',
                 fontFamily: 'Poppins, sans-serif'
             },
-            pointFormat: '<div style="min-width: 320px; max-width: 380px; overflow: hidden; border-radius: 16px; background: rgba(10, 25, 47, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(6, 182, 212, 0.4); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);">'+
-                            '<div style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(37, 99, 235, 0.08) 100%); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 16px 20px; border-bottom: 1px solid rgba(6, 182, 212, 0.25);">'+
+            pointFormat: '<div style="min-width: 320px; max-width: 380px; overflow: hidden; border-radius: 16px; background: rgba(13, 31, 13, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(74, 222, 128, 0.4); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);">'+
+                            '<div style="background: linear-gradient(135deg, rgba(74, 222, 128, 0.15) 0%, rgba(45, 90, 39, 0.1) 100%); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 16px 20px; border-bottom: 1px solid rgba(74, 222, 128, 0.3);">'+
                                 '<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">'+
                                     '<img src="{point.properties.image}" style="width: 32px; height: 32px; object-fit: contain; flex-shrink: 0;"/>'+
-                                    '<div style="font-size: 18px; font-weight: 700; color: #06b6d4; line-height: 1.2;">{point.name}</div>'+
+                                    '<div style="font-size: 18px; font-weight: 700; color: #4ade80; line-height: 1.2;">{point.name}</div>'+
                                 '</div>'+
-                                '<div style="font-size: 12px; color: #e0f2fe; line-height: 1.2; padding-top: 4px;">{point.value_total.0}</div>'+
+                                '<div style="font-size: 12px; color: #f0fdf4; line-height: 1.2; padding-top: 4px;">{point.value_total.0}</div>'+
                             '</div>'+
                             '<div style="padding: 0;">'+
                                 '<table style="width: 100%; border-collapse: collapse; font-size: 12px; table-layout: fixed;">'+
@@ -612,21 +612,21 @@ function CustomHighMap() {
                                         '</tr>'+
                                     '</thead>'+
                                     '<tbody>'+
-                                        '<tr style="background: rgba(30, 58, 95, 0.4); border-bottom: 1px solid rgba(6, 182, 212, 0.15);">'+
-                                            '<td style="padding: 12px; color: #e0f2fe; word-wrap: break-word;">Certificate <b style="color: #22d3ee;">Active</b></td>'+
-                                            '<td style="padding: 12px; text-align: center; color: #e0f2fe; font-weight: 600;">{point.value_total.2}</td>'+
+                                        '<tr style="background: rgba(45, 90, 39, 0.4); border-bottom: 1px solid rgba(74, 222, 128, 0.2);">'+
+                                            '<td style="padding: 12px; color: #f0fdf4; word-wrap: break-word;">Certificate <b style="color: #4ade80;">Active</b></td>'+
+                                            '<td style="padding: 12px; text-align: center; color: #f0fdf4; font-weight: 600;">{point.value_total.2}</td>'+
                                         '</tr>'+
-                                        '<tr style="background: rgba(30, 58, 95, 0.25); border-bottom: 1px solid rgba(6, 182, 212, 0.15);">'+
-                                            '<td style="padding: 12px; color: #e0f2fe; word-wrap: break-word;">Certificate <b style="color: #fbbf24;">Expired</b></td>'+
-                                            '<td style="padding: 12px; text-align: center; color: #e0f2fe; font-weight: 600;">{point.value_total.3}</td>'+
+                                        '<tr style="background: rgba(45, 90, 39, 0.25); border-bottom: 1px solid rgba(74, 222, 128, 0.2);">'+
+                                            '<td style="padding: 12px; color: #f0fdf4; word-wrap: break-word;">Certificate <b style="color: #fbbf24;">Expired</b></td>'+
+                                            '<td style="padding: 12px; text-align: center; color: #f0fdf4; font-weight: 600;">{point.value_total.3}</td>'+
                                         '</tr>'+
-                                        '<tr style="background: rgba(30, 58, 95, 0.4); border-bottom: 1px solid rgba(6, 182, 212, 0.15);">'+
-                                            '<td style="padding: 12px; color: #e0f2fe; word-wrap: break-word;">Not Yet <b style="color: #94a3b8;">Certificated</b></td>'+
-                                            '<td style="padding: 12px; text-align: center; color: #e0f2fe; font-weight: 600;">{point.value_total.4}</td>'+
+                                        '<tr style="background: rgba(45, 90, 39, 0.4); border-bottom: 1px solid rgba(74, 222, 128, 0.2);">'+
+                                            '<td style="padding: 12px; color: #f0fdf4; word-wrap: break-word;">Not Yet <b style="color: #94a3b8;">Certificated</b></td>'+
+                                            '<td style="padding: 12px; text-align: center; color: #f0fdf4; font-weight: 600;">{point.value_total.4}</td>'+
                                         '</tr>'+
-                                        '<tr style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(37, 99, 235, 0.2) 100%); border-top: 2px solid rgba(6, 182, 212, 0.5);">'+
-                                            '<td style="padding: 14px; text-align: center; color: #06b6d4; font-weight: 700;">Total Companies</td>'+
-                                            '<td style="padding: 14px; text-align: center; color: #06b6d4; font-weight: 700; font-size: 14px;">{point.value_total.1}</td>'+
+                                        '<tr style="background: linear-gradient(135deg, rgba(74, 222, 128, 0.3) 0%, rgba(45, 90, 39, 0.2) 100%); border-top: 2px solid rgba(255, 165, 0, 0.5);">'+
+                                            '<td style="padding: 14px; text-align: center; color: #4ade80; font-weight: 700;">Total Companies</td>'+
+                                            '<td style="padding: 14px; text-align: center; color: #4ade80; font-weight: 700; font-size: 14px;">{point.value_total.1}</td>'+
                                         '</tr>'+
                                     '</tbody>'+
                                 '</table>'+
@@ -644,7 +644,7 @@ function CustomHighMap() {
             x: -30,
             style: {
             fontSize: "16px",
-            color: '#06b6d4'
+            color: '#4ade80'
             }
         },
         series: [
@@ -660,7 +660,7 @@ function CustomHighMap() {
                     enabled: true,
                     format: "{point.name}",
                     style: {
-                        color: '#e0f2fe',
+                        color: '#f0fdf4',
                         textOutline: '1px contrast',
                         fontWeight: '500'
                     }
@@ -708,14 +708,14 @@ function CustomHighMap() {
                     styles={{
                         control: (provided) => ({
                             ...provided,
-                            backgroundColor: 'rgba(10, 25, 47, 0.85)',
-                            borderColor: 'rgba(6, 182, 212, 0.3)',
+                            backgroundColor: 'rgba(13, 31, 13, 0.85)',
+                            borderColor: 'rgba(74, 222, 128, 0.3)',
                             borderRadius: '12px',
                             boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3)',
                             minHeight: '50px',
                             '&:hover': {
-                                borderColor: 'rgba(6, 182, 212, 0.5)',
-                                boxShadow: '0 4px 20px rgba(6, 182, 212, 0.2)',
+                                borderColor: 'rgba(74, 222, 128, 0.5)',
+                                boxShadow: '0 4px 20px rgba(74, 222, 128, 0.2)',
                             },
                         }),
                         singleValue: (provided) => ({
@@ -732,16 +732,16 @@ function CustomHighMap() {
                         }),
                         dropdownIndicator: (provided) => ({
                             ...provided,
-                            color: '#22d3ee',
+                            color: '#fbbf24',
                             padding: '8px',
                             '&:hover': {
-                                color: '#06b6d4',
+                                color: '#4ade80',
                             },
                         }),
                         menu: (provided) => ({
                             ...provided,
-                            backgroundColor: 'rgba(10, 25, 47, 0.95)',
-                            border: '1px solid rgba(6, 182, 212, 0.3)',
+                            backgroundColor: 'rgba(13, 31, 13, 0.95)',
+                            border: '1px solid rgba(74, 222, 128, 0.3)',
                             borderRadius: '12px',
                             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
                             marginTop: '8px',
@@ -755,18 +755,18 @@ function CustomHighMap() {
                         option: (provided, state) => ({
                             ...provided,
                             backgroundColor: state.isSelected
-                                ? 'linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(37, 99, 235, 0.2) 100%)'
+                                ? 'linear-gradient(135deg, rgba(74, 222, 128, 0.25) 0%, rgba(45, 90, 39, 0.2) 100%)'
                                 : state.isFocused
-                                    ? 'rgba(6, 182, 212, 0.15)'
+                                    ? 'rgba(74, 222, 128, 0.15)'
                                     : 'transparent',
-                            color: state.isSelected ? '#22d3ee' : '#e0f2fe',
+                            color: state.isSelected ? '#fbbf24' : '#f0fdf4',
                             fontSize: '14px',
                             padding: '12px 16px',
                             borderRadius: '8px',
                             margin: '2px 0',
                             cursor: 'pointer',
                             '&:hover': {
-                                backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                                backgroundColor: 'rgba(74, 222, 128, 0.15)',
                                 color: '#ffffff',
                             },
                         }),
