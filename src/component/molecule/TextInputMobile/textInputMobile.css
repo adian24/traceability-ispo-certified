@@ -1,0 +1,11 @@
+.headerNav {
+    margin-top: -10;
+    cursor: pointer;
+  }
+  
+  .filter {
+    padding: 10;
+    border-radius: 18;
+    margin-top: -10;
+    margin-right: 15;
+  }
