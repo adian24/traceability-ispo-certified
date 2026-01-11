@@ -24,6 +24,7 @@ import {
   MapsLogin,
   kebunsawit
 } from "../../assets";
+import animasiSawit from "../../assets/video/animasisawit.mp4";
 import Hello from './hello';
 import { Gap } from "../../component/atom";
 import Select from 'react-select';
@@ -773,8 +774,8 @@ useEffect(() => {
           <div className="hero-content">
             <div className="hero-text-section fade-in-left">
               <h1 className="hero-title">
-                Indonesian <br />Sustainable Palm Oil
-                <span className="title-accent">ISPO Certification</span>
+                Indonesian <br />Sustainable Palm Oil<br/>
+                <span className="title-accent !ml-[0px]">Traceability</span>
               </h1>
               <p className="hero-subtitle">
                 Platform ketelusuran sertifikasi perkebunan kelapa sawit terdepan di Indonesia. Temukan perkebunan bersertifikat ISPO di seluruh nusantara dengan sistem pemetaan canggih kami.
@@ -818,34 +819,56 @@ useEffect(() => {
               Membangun kepercayaan melalui transparansi dan keunggulan dalam pemetaan sertifikasi kelapa sawit
             </p>
           </div>
-          <div className="values-grid">
-            <div className="value-card scale-in stagger-1">
-              <div className="value-number">01</div>
-              <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🌱</div>
-              <h3 className="value-title">Perkebunan Legal</h3>
-              <p className="value-description">Memastikan perkebunan memiliki izin yang sesuai dengan peraturan perundang-undangan</p>
+
+          <div className="values-content-wrapper">
+            {/* Left Side - Value Cards */}
+            <div className="values-grid-left">
+              <div className="value-card scale-in stagger-1">
+                <div className="value-number">01</div>
+                <div className="shimmer"></div>
+                <div className="value-icon-wrapper">🌱</div>
+                <h3 className="value-title">Perkebunan Legal</h3>
+                <p className="value-description">Memastikan perkebunan memiliki izin yang sesuai dengan peraturan perundang-undangan</p>
+              </div>
+              <div className="value-card scale-in stagger-2">
+                <div className="value-number">02</div>
+                <div className="shimmer"></div>
+                <div className="value-icon-wrapper">🌿</div>
+                <h3 className="value-title">Manajemen Berkelanjutan</h3>
+                <p className="value-description">Menerapkan praktik pengelolaan yang ramah lingkungan dan berkelanjutan</p>
+              </div>
+              <div className="value-card scale-in stagger-3">
+                <div className="value-number">03</div>
+                <div className="shimmer"></div>
+                <div className="value-icon-wrapper">🤝</div>
+                <h3 className="value-title">Kesejahteraan Petani</h3>
+                <p className="value-description">Meningkatkan kesejahteraan dan kompetensi petani kelapa sawit</p>
+              </div>
+              <div className="value-card scale-in stagger-4">
+                <div className="value-number">04</div>
+                <div className="shimmer"></div>
+                <div className="value-icon-wrapper">🌍</div>
+                <h3 className="value-title">Jejak Keberlanjutan</h3>
+                <p className="value-description">Memantau dan melacak rantai pasok minyak sawit yang berkelanjutan</p>
+              </div>
             </div>
-            <div className="value-card scale-in stagger-2">
-              <div className="value-number">02</div>
-              <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🌿</div>
-              <h3 className="value-title">Manajemen Berkelanjutan</h3>
-              <p className="value-description">Menerapkan praktik pengelolaan yang ramah lingkungan dan berkelanjutan</p>
-            </div>
-            <div className="value-card scale-in stagger-3">
-              <div className="value-number">03</div>
-              <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🤝</div>
-              <h3 className="value-title">Kesejahteraan Petani</h3>
-              <p className="value-description">Meningkatkan kesejahteraan dan kompetensi petani kelapa sawit</p>
-            </div>
-            <div className="value-card scale-in stagger-4">
-              <div className="value-number">04</div>
-              <div className="shimmer"></div>
-              <div className="value-icon-wrapper">🌍</div>
-              <h3 className="value-title">Jejak Keberlanjutan</h3>
-              <p className="value-description">Memantau dan melacak rantai pasok minyak sawit yang berkelanjutan</p>
+
+            {/* Right Side - Video */}
+            <div className="values-video-container fade-in-up stagger-4">
+              <video
+                ref={el => {
+                  if (el) {
+                    el.playbackRate = 0.5; // Play at half speed for smoother loop
+                  }
+                }}
+                className="values-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src={animasiSawit} type="video/mp4" />
+              </video>
             </div>
           </div>
         </section>

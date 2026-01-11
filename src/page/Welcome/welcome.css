@@ -1282,6 +1282,107 @@ body.light-mode .map-canvas {
   }
 }
 
+/* Values Content Wrapper - Split Layout */
+.values-content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left Side - Value Cards Grid */
+.values-grid-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Right Side - Video Container */
+.values-video-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  width: 120%;
+  margin-right: -20%;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.values-video-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.values-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: contrast(1.05) saturate(1.1);
+  border-radius: 20px;
+}
+
+/* Responsive - Values Split Layout */
+@media screen and (max-width: 1024px) {
+  .values-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .values-grid-left {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-video-container {
+    order: -1;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .values-content-wrapper {
+    gap: 30px;
+  }
+
+  .values-grid-left {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .values-video-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .values-video-container {
+    width: 100%;
+  }
+}
+
 .values-grid {
   max-width: 1400px;
   margin: 0 auto;
@@ -1302,8 +1403,8 @@ body.light-mode .map-canvas {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(74, 222, 128, 0.2);
-  border-radius: 32px;
-  padding: 50px 35px;
+  border-radius: 20px;
+  padding: 30px 20px;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
@@ -1417,9 +1518,9 @@ body.light-mode .value-card:hover {
 
 /* Icon Container - Glowing Effect */
 .value-icon-wrapper {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 28px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1427,8 +1528,8 @@ body.light-mode .value-card:hover {
     rgba(74, 222, 128, 0.2) 0%,
     rgba(90, 156, 82, 0.2) 100%);
   border: 2px solid rgba(74, 222, 128, 0.3);
-  border-radius: 28px;
-  font-size: 48px;
+  border-radius: 20px;
+  font-size: 32px;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   box-shadow:
@@ -1445,7 +1546,7 @@ body.light-mode .value-card:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  border-radius: 28px;
+  border-radius: 20px;
   background: inherit;
   animation: icon-pulse 2s ease-in-out infinite;
   z-index: -1;
@@ -1489,11 +1590,11 @@ body.light-mode .value-card:hover {
 
 /* Title - Enhanced Typography */
 .value-title {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 800;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   letter-spacing: 0.5px;
   text-transform: none;
   position: relative;
@@ -1511,9 +1612,9 @@ body.light-mode .value-card:hover {
 
 /* Description - Improved Readability */
 .value-description {
-  font-size: 15px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.7;
+  line-height: 1.6;
   font-weight: 400;
 }
 
@@ -1967,10 +2068,10 @@ body.light-mode .checkbox-label {
 /* Number Badge */
 .value-number {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1978,8 +2079,8 @@ body.light-mode .checkbox-label {
     rgba(74, 222, 128, 0.3) 0%,
     rgba(90, 156, 82, 0.3) 100%);
   border: 1px solid rgba(74, 222, 128, 0.4);
-  border-radius: 12px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 800;
   color: #fbbf24;
   opacity: 0.6;
