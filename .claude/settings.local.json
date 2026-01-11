@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(del:*)",
+      "Bash(cat:*)",
+      "Bash(git restore:*)",
+      "Bash(set NODE_OPTIONS=--openssl-legacy-provider:*)",
+      "Bash(npm start)",
+      "Bash(timeout:*)"
+    ]
+  }
+}

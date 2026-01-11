@@ -1,0 +1,294 @@
+  .bg-map-signup {
+    background-image: url(../../assets/images/MapsLogin.png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: auto !important;
+    height: 100vh !important;
+    background-position: center top !important;
+    overflow: hidden !important;
+  }
+  
+  .account-signup {
+    color: #333 !important;
+  }
+  
+  .create-account-signup {
+    background-color: white !important;
+    text-align: center !important;
+    box-shadow: 0px 1px 7px 0px #aaa !important;
+    cursor: pointer !important;
+    color: #333 !important;
+    margin-left: 20px !important;
+  }
+  
+  .wrap-signup {
+    background-color: transparent !important;
+  }
+  
+  .title-signup-page {
+    text-align: center !important;
+    font-weight: 800 !important;
+    font-family: "Poppins", sans-serif !important;
+  }
+  
+  .signupGoogle {
+    width: 100% !important;
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    cursor: pointer !important;
+  }
+  
+  .title-signupGoogle {
+    letter-spacing: 1px !important;
+    margin-left: 13px !important;
+    color: #333 !important;
+  }
+  
+  .title-option-signup {
+    color: #aaa !important;
+  }
+  
+  .btn-signup {
+    width: 100% !important;
+    background-color: #0051c4 !important; 
+    color: white; 
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 912px){
+    .logo-label-maps-signup {
+      width: 100px !important;
+      height: 80px !important;
+      margin-top: 80px !important;
+    }
+  
+    .account-signup {
+      font-size: 16px !important;
+      margin-top: 100px !important;
+    }
+  
+    .create-account-signup {
+      margin-top: 100px !important;
+      height: 25px !important;
+      width: 160px !important;
+      font-size: 16px !important;
+      border-radius: 9px !important;
+      line-height: 23px !important;
+    }
+
+    .wrap-signup {
+      width: 55% !important;
+      margin-top: 60px !important;
+    }
+  
+    .title-signup-page {
+      font-size: 32px !important;
+    }
+  
+    .signupGoogle {
+      height: 60px !important;
+      border-radius: 12px !important;
+      margin-top: 5px !important;
+    }
+  
+    .logo-google-signup {
+      width: 33px !important;
+      height: 30px !important;
+      margin-top: 15px !important;
+    }
+  
+    .title-signupGoogle {
+      line-height: 50px !important;
+      font-size: 23px !important;
+    }
+  
+    .line-signup {
+      width: 100% !important;
+      background-color: #aaaa !important;
+      height: 1.5px !important;
+      margin-top: 20px !important;
+    }
+  
+    .title-option-signup {
+      font-size: 12px !important;
+      margin-top: 10px !important;
+    }
+
+    .btn-signup {
+      border-radius: 10px !important; 
+      margin-top: 5px !important;
+      height: 60px !important;
+      font-size: 23px !important;
+    }  
+  }
+
+  @media screen and (min-width: 913px) and (max-width: 1440px){
+    .logo-label-maps-signup {
+      width: 85px !important;
+      height: 65px !important;
+      margin-top: 35px !important;
+    }
+  
+    .account-signup {
+      font-size: 16px !important;
+      margin-top: 40px !important;
+    }
+  
+    .create-account-signup {
+      margin-top: 40px !important;
+      height: 28px !important;
+      width: 150px !important;
+      font-size: 216x !important;
+      border-radius: 9px !important;
+      line-height: 25px !important;
+    }
+
+    .wrap-signup {
+      width: 29% !important;
+      margin-top: 0px !important;
+    }
+  
+    .title-signup-page {
+      font-size: 25px !important;
+    }
+  
+    .signupGoogle {
+      height: 43px !important;
+      border-radius: 10px !important;
+      margin-top: 5px !important;
+    }
+  
+    .logo-google-signup {
+      width: 28px !important;
+      height: 25px !important;
+      margin-top: 8px !important;
+    }
+  
+    .title-signupGoogle {
+      line-height: 38px !important;
+      font-size: 16px !important;
+    }
+  
+    .line-signup {
+      width: 100% !important;
+      background-color: #aaaa !important;
+      height: 1.5px !important;
+      margin-top: 20px !important;
+    }
+  
+    .title-option-signup {
+      font-size: 12px !important;
+      margin-top: 10px !important;
+    }
+
+    .btn-signup {
+      border-radius: 10px !important; 
+      margin-top: 5px !important;
+      height: 43px !important;
+      font-size: 16px !important;
+      
+    }  
+  }
+
+  @media screen and (min-width: 1281px) and (max-width: 1440px){
+    .wrap-signup {
+      width: 29% !important;
+      margin-top: 60px !important;
+    }
+  
+    .title-signup-page {
+      font-size: 28px !important;
+    }
+  
+    .signupGoogle {
+      height: 48px !important;
+      border-radius: 10px !important;
+      margin-top: 5px !important;
+    }
+  
+    .title-signupGoogle {
+      line-height: 38px !important;
+      font-size: 18px !important;
+    }
+  
+    .title-option-signup {
+      font-size: 14px !important;
+    }
+
+    .btn-signup {
+      border-radius: 10px !important; 
+      margin-top: 5px !important;
+      height: 48px !important;
+      font-size: 16px !important;
+      
+    }  
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 2560px){
+    .logo-label-maps-signup {
+      width: 95px !important;
+      height: 75px !important;
+      margin-top: 45px !important;
+    }
+  
+    .account-signup {
+      font-size: 18px !important;
+      margin-top: 50px !important;
+    }
+  
+    .create-account-signup {
+      margin-top: 50px !important;
+      height: 28px !important;
+      width: 150px !important;
+      font-size: 18px !important;
+      border-radius: 9px !important;
+      line-height: 25px !important;
+    }
+
+    .wrap-signup {
+      width: 29% !important;
+      margin-top: 30px !important;
+    }
+  
+    .title-signup-page {
+      font-size: 28px !important;
+    }
+  
+    .signupGoogle {
+      height: 50px !important;
+      border-radius: 12px !important;
+      margin-top: 5px !important;
+    }
+  
+    .logo-google-signup {
+      width: 28px !important;
+      height: 25px !important;
+      margin-top: 8px !important;
+    }
+  
+    .title-signupGoogle {
+      line-height: 38px !important;
+      font-size: 20px !important;
+    }
+  
+    .line-signup {
+      width: 100% !important;
+      background-color: #aaaa !important;
+      height: 1.5px !important;
+      margin-top: 20px !important;
+    }
+  
+    .title-option-signup {
+      font-size: 15px !important;
+      margin-top: 7px !important;
+    }
+
+    .btn-signup {
+      border-radius: 10px !important; 
+      margin-top: 5px !important;
+      height: 50px !important;
+      font-size: 18px !important;
+      
+    }  
+  }

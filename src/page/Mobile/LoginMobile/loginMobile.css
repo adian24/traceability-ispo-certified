@@ -1,0 +1,40 @@
+@media screen and (min-width: 280px) and (max-width: 540px){
+  .modal-dialog {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .modal-content {
+    /* width: 80% !important; */
+    margin-top: 25vh !important;
+  }
+  
+  .title-modal-forgot-pass-mobile {
+    color: #0051c4 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: 800 !important;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px){
+  .modal-dialog {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .modal-content {
+    width: 80% !important;
+    margin-top: 25vh !important;
+  }
+  
+  .title-modal-forgot-pass-mobile {
+    color: #0051c4 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: large !important;
+    text-align: center;
+    font-weight: 800 !important;
+  }
+}
+

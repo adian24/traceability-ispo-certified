@@ -1,0 +1,76 @@
+.contain-card {
+    display: flex;
+    justify-content: center;
+}
+
+.img-pga {
+    align-self: center;
+    width: 200px;
+    height: 100%;
+}
+
+.text-contain { 
+    font-family: "Poppins"; 
+    margin: 10px; 
+    color: #4a4a4a;
+    font-size: large;
+}
+
+.text-status {
+    font-family: "Poppins";
+    margin: 10px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.btn-continue { 
+    background-color: #f76b00; 
+    border: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-contain, .text-status {
+    font-size: large
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .text-contain, .text-status {
+    font-size: medium
+  } 
+  .img-pga {
+    width: 150px;
+    height: 100%;
+  } 
+}
+
+@media screen and (max-width: 425px) {
+  .text-contain, .text-status {
+    font-size: small;
+  }
+  .img-pga {
+    width: 150px;
+    height: 100%;
+  } 
+}
+
+@media screen and (max-width: 375px) {
+  .text-contain, .text-status {
+    font-size: smaller;
+  }
+  .img-pga {
+    width: 120px;
+    height: 100%;
+  } 
+}
+
+@media screen and (max-width: 320px) {
+  .text-contain, .text-status {
+    font-size: xx-small;
+  }
+  .img-pga {
+    width: 120px;
+    height: 100%;
+  }  
+}

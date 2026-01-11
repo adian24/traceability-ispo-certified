@@ -1,0 +1,114 @@
+/*
+
+.detail-active-company-mobile {
+  width: 100% !important;
+  background: #fff;
+  height: 100vh !important;
+  z-index: 3 !important;
+  position: relative !important;
+  top: -130px;
+} */
+
+.hide-map {
+  display: none !important;
+}
+
+.btnAddPlaceMobile {
+  display: flex !important;
+  margin-top: 4px !important;
+  /* margin-right: 20px !important; */
+  cursor: pointer;
+  width: 110px !important;
+  height: 35px !important;
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  justify-content: center !important;
+  line-height: 33px !important;
+  border-radius: 8px;
+  float: right;
+}
+
+.map {
+  display: inherit !important;
+}
+
+.navigation {
+  position: fixed; 
+  z-index: 2; 
+  margin-top: 50px; 
+  display: flex;
+}
+
+.search-here {
+  background-color: white;
+  width: 70vw !important;
+  border-radius: 18px;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 60px !important;
+}
+
+.title-search {
+  font-size: 1.3em!important;
+  color: #aaa!important;
+  justify-self: center!important;
+  align-self: center!important;
+  line-height: 58px!important;
+  margin-left: 20px!important;
+}
+
+.map-mobile {
+  position: fixed !important; 
+  z-index: 1 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  }
+
+  .input-mobile-active {
+    background: #fff !important;
+    width: 90% !important;
+    border-radius: 5px !important;
+    margin-left: 20px !important;
+    border: 1px solid rgb(238, 230, 230);
+    padding: 12px !important;
+    padding-left: 13px !important;
+    font-size: 12px;
+  }
+  
+  .input-mobile {
+    background: #eee !important;
+    width: 90% !important;
+    border-radius: 5px !important;
+    margin-left: 20px !important;
+    border: 1px solid rgb(238, 230, 230);
+    padding: 12px !important;
+    padding-left: 13px !important;
+    font-size: 12px;
+  }
+
+  .icon-plus-mobile {
+    margin-top: 8px !important;
+    margin-right: 5px !important;
+  }
+  
+
+@media screen and (max-width: 425px) {
+
+  .search-here {
+    width: 50vw !important;
+    border-radius: 15px;
+    height: 50px !important;
+  }
+
+  .title-search {
+    font-size: 1em !important;
+    line-height: 50px !important;
+    align-items: center;
+    display: grid;
+  }
+
+  .icon-plus-mobile {
+    margin-top: 8px !important;
+    margin-right: 5px !important;
+  }
+}

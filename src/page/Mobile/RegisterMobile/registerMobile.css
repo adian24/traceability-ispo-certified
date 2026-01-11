@@ -1,0 +1,231 @@
+.bg-map-signup-mobile {
+  background-image: url(../../../assets/images/MapsLogin.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: auto !important;
+  height: 100vh !important;
+  background-position: center top !important;
+  overflow: hidden !important;
+}
+
+.account-signup-mobile {
+  color: #333 !important;
+}
+
+.create-account-signup-mobile {
+  background-color: white !important;
+  text-align: center !important;
+  box-shadow: 0px 1px 7px 0px #aaa !important;
+  cursor: pointer !important;
+  color: #333 !important;
+}
+
+.wrap-signup-mobile {
+  background-color: transparent !important;
+}
+
+.title-signup-page-mobile {
+  text-align: center !important;
+  font-weight: 800 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.signupGoogle-mobile {
+  width: 100% !important;
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  cursor: pointer !important;
+}
+
+.title-signupGoogle-mobile {
+  letter-spacing: 1px !important;
+  margin-left: 13px !important;
+  color: #333 !important;
+}
+
+.title-option-signup-mobile {
+  color: #aaa !important;
+}
+
+.btn-signup-mobile {
+  width: 100% !important;
+  background-color: #0051c4 !important; 
+  color: white; 
+  border: none !important;
+  cursor: pointer !important;
+}
+
+@media screen and (min-width: 280px) and (max-width: 392px){
+  .logo-label-maps-signup-mobile {
+    width: 75px !important;
+    height: 55px !important;
+    margin-top: 25px !important;
+  }
+
+  .account-signup-mobile {
+    font-size: 12px !important;
+    margin-top: 23px !important;
+  }
+
+  .create-account-signup-mobile {
+    margin-left: 30px !important;
+    margin-top: 20px !important;
+    height: 23px !important;
+    width: 120px !important;
+    font-size: 12px !important;
+    border-radius: 9px !important;
+    line-height: 20px !important;
+  }
+
+  .wrap-signup-mobile {
+    width: 75% !important;
+    margin-top: 10px !important;
+  }
+
+  .title-signup-page-mobile {
+    font-size: 18px !important;
+    margin-top: 0px !important;
+  }
+
+  .signupGoogle-mobile {
+    height: 35px !important;
+    border-radius: 10px !important;
+    margin-top: 5px !important;
+  }
+
+  .logo-google-mobile {
+    width: 27px !important;
+    height: 24px !important;
+    margin-top: 3px !important;
+  }
+
+  .title-signupGoogle-mobile {
+    line-height: 30px !important;
+    font-size: 16px !important;
+  }
+
+  .line-signup-mobile {
+    width: 100% !important;
+    background-color: #aaaa !important;
+    height: 1.5px !important;
+    margin-top: 20px !important;
+  }
+
+  .title-option-signup-mobile {
+    font-size: 11.5px !important;
+    margin-top: 9px !important;
+  }
+
+  .btn-signup-mobile {
+    border-radius: 10px !important; 
+    margin-top: 5px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (min-width: 393px) and (max-width: 768px){
+  .logo-label-maps-signup-mobile {
+    width: 85px !important;
+    height: 65px !important;
+    margin-top: 25px !important;
+  }
+
+  .account-signup-mobile {
+    font-size: 16px !important;
+    margin-top: 23px !important;
+  }
+
+  .create-account-signup-mobile {
+    margin-left: 30px !important;
+    margin-top: 20px !important;
+    height: 26px !important;
+    width: 140px !important;
+    font-size: 16px !important;
+    border-radius: 9px !important;
+    line-height: 23px !important;
+  }
+
+  .wrap-signup-mobile {
+    width: 75% !important;
+    margin-top: 10px !important;
+  }
+
+  .title-signup-page-mobile {
+    font-size: 25px !important;
+    margin-top: 0px !important;
+  }
+
+  .signupGoogle-mobile {
+    height: 48px !important;
+    border-radius: 12px !important;
+    margin-top: 5px !important;
+  }
+
+  .logo-google-mobile {
+    width: 32px !important;
+    height: 29px !important;
+    margin-top: 7px !important;
+  }
+
+  .title-signupGoogle-mobile {
+    line-height: 41px !important;
+    font-size: 20px !important;
+  }
+
+  .line-signup-mobile {
+    width: 100% !important;
+    background-color: #aaaa !important;
+    height: 1.5px !important;
+    margin-top: 20px !important;
+  }
+
+  .title-option-signup-mobile {
+    font-size: 12px !important;
+    margin-top:9px !important;
+  }
+
+  .btn-signup-mobile {
+    border-radius: 10px !important; 
+    margin-top: 5px !important;
+    height: 48px !important;
+    font-size: 20px !important;
+  }
+
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px){
+  .logo-label-maps-signup-mobile {
+    width: 95px !important;
+    height: 75px !important;
+    margin-top: 20px !important;
+  }
+
+  .account-signup-mobile {
+    font-size: 17px !important;
+    margin-top: 23px !important;
+  }
+
+  .create-account-signup-mobile {
+    margin-left: 30px !important;
+    margin-top: 25px !important;
+    height: 27px !important;
+    width: 150px !important;
+    font-size: 17px !important;
+    border-radius: 9px !important;
+    line-height: 24px !important;
+  }
+
+  .wrap-signup-mobile {
+    width: 60% !important;
+    margin-top: 15x !important;
+  }
+
+  .title-option-signup-mobile {
+    font-size: 12px !important;
+    margin-top: 9px !important;
+  }
+
+}
+
+

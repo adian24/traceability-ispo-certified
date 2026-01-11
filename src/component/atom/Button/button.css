@@ -1,0 +1,10 @@
+.button {
+  background-color: #0888c4;
+  outline: none;
+  padding: 0px 20px;
+}
+.text-button {
+  font-size: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+}
